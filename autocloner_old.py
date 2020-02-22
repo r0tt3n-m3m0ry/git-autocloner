@@ -4,10 +4,10 @@ from os import system
 import design_old
 import sys
 
-class App(QMainWindow, design.Ui_Form):
+class App(QMainWindow, design_old.Ui_Form):
     def __init__(self):
         super().__init__()
-        self.ui = design.Ui_Form()
+        self.ui = design_old.Ui_Form()
         self.ui.setupUi(self)
         self.ui.btn_clone.clicked.connect(self.clone)
 
