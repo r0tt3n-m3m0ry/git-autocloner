@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'untitled.ui'
+# Form implementation generated from reading ui file 'design.ui'
 #
 # Created by: PyQt5 UI code generator 5.14.0
 #
@@ -10,35 +10,48 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Form(object):
-    def setupUi(self, Form):
-        Form.setObjectName("Form")
-        Form.resize(560, 758)
-        self.label = QtWidgets.QLabel(Form)
-        self.label.setGeometry(QtCore.QRect(10, 10, 541, 101))
+class Ui_GitAutocloner(object):
+    def setupUi(self, GitAutocloner):
+        GitAutocloner.setObjectName("GitAutocloner")
+        GitAutocloner.resize(560, 758)
+        self.header = QtWidgets.QLabel(GitAutocloner)
+        self.header.setGeometry(QtCore.QRect(10, 10, 541, 111))
         font = QtGui.QFont()
         font.setPointSize(24)
-        self.label.setFont(font)
-        self.label.setFrameShape(QtWidgets.QFrame.Box)
-        self.label.setLineWidth(2)
-        self.label.setAlignment(QtCore.Qt.AlignCenter)
-        self.label.setObjectName("label")
-        self.links = QtWidgets.QPlainTextEdit(Form)
-        self.links.setGeometry(QtCore.QRect(10, 120, 541, 521))
+        self.header.setFont(font)
+        self.header.setFrameShape(QtWidgets.QFrame.Box)
+        self.header.setLineWidth(2)
+        self.header.setAlignment(QtCore.Qt.AlignCenter)
+        self.header.setObjectName("header")
+        self.links = QtWidgets.QPlainTextEdit(GitAutocloner)
+        self.links.setGeometry(QtCore.QRect(10, 170, 541, 471))
         self.links.setObjectName("links")
-        self.btn_clone = QtWidgets.QPushButton(Form)
+        self.btn_clone = QtWidgets.QPushButton(GitAutocloner)
         self.btn_clone.setGeometry(QtCore.QRect(10, 650, 541, 91))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.btn_clone.setFont(font)
         self.btn_clone.setObjectName("btn_clone")
+        self.profile = QtWidgets.QLineEdit(GitAutocloner)
+        self.profile.setGeometry(QtCore.QRect(140, 130, 301, 31))
+        self.profile.setObjectName("profile")
+        self.btn_clone_all = QtWidgets.QPushButton(GitAutocloner)
+        self.btn_clone_all.setGeometry(QtCore.QRect(450, 130, 101, 31))
+        self.btn_clone_all.setObjectName("btn_clone_all")
+        self.is_clone_all = QtWidgets.QCheckBox(GitAutocloner)
+        self.is_clone_all.setGeometry(QtCore.QRect(10, 130, 121, 31))
+        self.is_clone_all.setObjectName("is_clone_all")
 
-        self.retranslateUi(Form)
-        QtCore.QMetaObject.connectSlotsByName(Form)
+        self.retranslateUi(GitAutocloner)
+        QtCore.QMetaObject.connectSlotsByName(GitAutocloner)
 
-    def retranslateUi(self, Form):
+    def retranslateUi(self, GitAutocloner):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Git Autocloner"))
-        self.label.setText(_translate("Form", "Git Autocloner by Oleg Voevodin"))
-        self.links.setPlaceholderText(_translate("Form", "Please, enter GitHub repositories links, one link by one string\n\nALL LINKS MUST CONTAIN PROTOCOL TOO!"))
-        self.btn_clone.setText(_translate("Form", "Clone!"))
+        GitAutocloner.setWindowTitle(_translate("GitAutocloner", "Git Autocloner"))
+        self.header.setText(_translate("GitAutocloner", "Git Autocloner by Oleg Voevodin"))
+        self.links.setPlaceholderText(_translate("GitAutocloner", "Please, enter GitHub repositories links, one link by one string (WITH PROTOCOL!)"))
+        self.btn_clone.setText(_translate("GitAutocloner", "Clone!"))
+        self.profile.setPlaceholderText(_translate("GitAutocloner", "GitHub username (or profile link with protocol)"))
+        self.btn_clone_all.setText(_translate("GitAutocloner", "Clone!"))
+        self.is_clone_all.setText(_translate("GitAutocloner", " Clone all repos\n"
+" from account"))

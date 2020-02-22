@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>GitAutocloner</class>
- <widget class="QWidget" name="GitAutocloner">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,15 +11,15 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Git Autocloner</string>
+   <string>Form</string>
   </property>
-  <widget class="QLabel" name="header">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>10</y>
      <width>541</width>
-     <height>111</height>
+     <height>101</height>
     </rect>
    </property>
    <property name="font">
@@ -44,13 +44,13 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>170</y>
+     <y>120</y>
      <width>541</width>
-     <height>471</height>
+     <height>521</height>
     </rect>
    </property>
    <property name="placeholderText">
-    <string>Please, enter GitHub repositories links, one link by one string (WITH PROTOCOL!)</string>
+    <string>Please, enter GitHub repositories links, one link by one string</string>
    </property>
   </widget>
   <widget class="QPushButton" name="btn_clone">
@@ -69,46 +69,6 @@
    </property>
    <property name="text">
     <string>Clone!</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="profile">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>130</y>
-     <width>301</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="placeholderText">
-    <string>GitHub username (or profile link with protocol)</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btn_clone_all">
-   <property name="geometry">
-    <rect>
-     <x>450</x>
-     <y>130</y>
-     <width>101</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Clone!</string>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="is_clone_all">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>130</y>
-     <width>121</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Clone all repos
-from account</string>
    </property>
   </widget>
  </widget>
