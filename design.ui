@@ -24,7 +24,7 @@
    </property>
    <property name="font">
     <font>
-     <pointsize>24</pointsize>
+     <pointsize>20</pointsize>
     </font>
    </property>
    <property name="frameShape">
@@ -64,7 +64,7 @@
    </property>
    <property name="font">
     <font>
-     <pointsize>20</pointsize>
+     <pointsize>16</pointsize>
     </font>
    </property>
    <property name="text">

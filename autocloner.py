@@ -16,10 +16,12 @@ class App(QMainWindow, design.Ui_GitAutocloner):
 
     def clone(self):
         links_for_cloning = self.ui.links.toPlainText().split('\n')
+
         for link in links_for_cloning:
             link = link.strip()
             if link != '':
                 system(f'git clone {link}')
+
         QMessageBox.about(self, 'OK', 'Completed! :D')
 
     def clone_all(self):
